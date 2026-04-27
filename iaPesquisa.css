@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #e4e4e7;
+    display: flexbox;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.section {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+.nav {
+    width: 92%;
+}
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.nav a {
+    display: flex;
+    justify-content:end;
+    text-decoration: none;
+    background-color: #0f0f0f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
+}
+
+.icone {
+    width: 5%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-icone {
+    background-color: #dc2626;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn-icone img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+
+.btn-icone:hover {
+    background-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
+}
+
+.TituloPrincipal {
+    font-size: 40px;
+    color: #fafafa;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.paragrafoPrincipal {
+    color: #71717a;
+    margin: 10px;
+}
+
+span {
+    color: #b91c1c;
+}
+
+p {
+    color: #71717a;
+    margin: 10px;
+}
+
+.cabecalho {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    padding: 16px;
+    border: 1px solid #dc2626;
+    border-radius: 10px;
+    background: #141419;
+    color: #fafafa;
+    outline: none;
+    margin-top: 10px;
+}
+
+.ia {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+
+
+button {
+    width: 50%;
+    background: #dc2626;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+
+    transition: transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
+}
+
+
+#botaoGerar{
+    margin-top: 10px;
+}
+
+.blocoCodigo{
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    background: #141419;
+    border: 2px solid #27272a;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+    color: #e5e5e5;
+    line-height: 2;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.Codigo {
+    text-align: center;
+}
+
+.Preview {
+    text-align: center;
+}
+
+.resultadoCodigo {
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    height: 100%;
+    min-height: 350px;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    background: #141419;
+    margin: 10px;
+}
+
+.Resultado {
+    width: 100%;
+    max-width: 1900px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.ia2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* centraliza */
+    padding: 0 20px;
+    /* afasta das bordas */
+}
+
+.blocos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    width: 100%;
+    max-width: 250px;
+    flex: 1;
+
+    /* EFEITO SUAVE SEM CAIXA */
+    transition: transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.campo:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.1);
+}
+
+select,
+input {
+    background: #1c1c1c;
+    color: #e5e5e5;
+
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+
+    width: 100%;
+    max-width: 250px;
+
+    transition: 0.2s;
+}
+
+#botaoGerarTreino {
+
+    display: flex;
+    justify-content: center;
+    width: 52%;
+
+}
+
+.ResultadoTreino {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #e5ddd5;
+    border-radius: 12px;
+    border: 5px solid  #dc2626;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ResultadoTreino > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* =========================
+   TABLET (até 768px)
+========================= */
+@media (max-width: 768px) {
+
+    .blocos {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .campo {
+        max-width: 200px;
+    }
+
+    select,
+    input {
+        max-width: 200px;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .ResultadoTreino {
+        gap: 16px;
+        margin-bottom: 150px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .blocos {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .campo {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    select,
+    input {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
